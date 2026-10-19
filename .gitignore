@@ -1,0 +1,9 @@
+.env.local
+node_modules
+.next
+# Proteção contra vazamento de credenciais e chaves privadas
+service-account.json
+credentials*.json
+*.pem
+chave*.txt
+credenciais*.txt
