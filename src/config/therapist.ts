@@ -6,6 +6,7 @@ export interface TherapistConfig {
   videoUrl?: string;
   instagramUrl: string;
   whatsappNumber: string;
+  email: string;
   about: {
     summary: string;
     highlights: string[];
@@ -18,13 +19,14 @@ export interface TherapistConfig {
 }
 
 export const defaultTherapistConfig: TherapistConfig = {
-  name: "Anderson [Inserir Sobrenome]", // Substitua pelo nome completo do Anderson
+  name: "Anderson Kleiton de Oliveira Gaspar",
   title: "Psicólogo Clínico • Atendimento Online",
-  crp: "CRP 00/00000", // Substitua pelo CRP real
+  crp: "CRP-03/26389",
   avatarUrl: "/images/anderson.jpg",
   videoUrl: "",
-  instagramUrl: "https://instagram.com/seu.perfil", // Coloque o link do Instagram profissional
-  whatsappNumber: "5575999999999", // Coloque o DDD e número do WhatsApp profissional
+  instagramUrl: "https://instagram.com/seu.perfil",
+  whatsappNumber: "5575992605090", // Número de contato com DDI e DDD formatados para o WhatsApp
+  email: "gaspar.akg@gmail.com",
   about: {
     summary:
       "Profissional dedicado a auxiliar pessoas no processo de autoconhecimento, gestão da ansiedade e superação de desafios emocionais através do acolhimento sigiloso e humanizado.",
@@ -36,13 +38,14 @@ export const defaultTherapistConfig: TherapistConfig = {
     ],
   },
   approach: {
-    title: "Terapia Cognitivo-Comportamental (TCC)",
+    title: "Abordagem Integrada: TCC, Psicanálise e Técnicas de Regulação",
     description:
-      "Uma abordagem estruturada, objetiva e focada no presente, voltada para identificar padrões de pensamentos e comportamentos que impactam o bem-estar emocional.",
+      "Uma prática clínica fundamentada na Teoria Cognitivo-Comportamental (TCC) e na Psicanálise (primeira e segunda tópica), associada a intervenções práticas como a TRD (Técnica de Respiração Diafragmática) para regulação ansiosa e a TCM (Técnica de Controle Mental) para o manejo de pensamentos automáticos disfuncionais.",
     topics: [
-      "Tratamento focado em ansiedade, estresse e reestruturação cognitiva",
-      "Desenvolvimento de estratégias práticas e resolutivas para o dia a dia",
-      "Prática baseada em evidências científicas e acolhimento humanizado",
+      "Teoria Cognitivo-Comportamental (TCC) aplicada à reestruturação de padrões de pensamento",
+      "Psicanálise (1ª e 2ª tópica) para compreensão profunda do inconsciente e dinâmica psíquica",
+      "TRD (Técnica de Respiração Diafragmática) para alívio do estresse e regulação emocional",
+      "TCM (Técnica de Controle Mental) voltada ao manejo de pensamentos automáticos disfuncionais",
     ],
   },
 };
