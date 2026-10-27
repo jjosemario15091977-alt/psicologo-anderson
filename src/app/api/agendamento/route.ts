@@ -40,7 +40,8 @@ export async function POST(request: Request) {
       dataApenasDia = dataHorario.split('T')[0];
     }
 
-    const professionalEmail = process.env.PROFESSIONAL_EMAIL || 'jjosemario15091977@gmail.com';
+    // E-mail de destino forçado para você durante a fase de testes
+    const professionalEmail = 'jjosemario15091977@gmail.com';
     
     // URL base oficial configurada com o seu domínio profissional
     const baseUrl = 'https://atendimentovirtual.site';
@@ -94,7 +95,6 @@ export async function POST(request: Request) {
     const cardsHtml = horariosDisponiveis.map(slot => {
       const proposalLink = `${baseUrl}/proposta?nome=${encodeURIComponent(nome)}&data=${encodeURIComponent(slot.textDate)}&email=${encodeURIComponent(email || '')}&whatsapp=${encodeURIComponent(whatsapp)}`;
       
-      // Mensagem otimizada com quebras de linha para garantir clique fácil no celular e PC
       const whatsAppText = `Olá ${nome}! Aqui estão os detalhes da proposta para a sua sessão de psicoterapia agendada para ${slot.textDate}.\n\nAcesse o link abaixo para escolher seu plano e prosseguir:\n${proposalLink}`;
       
       const cleanPhone = whatsapp.replace(/\D/g, '');
